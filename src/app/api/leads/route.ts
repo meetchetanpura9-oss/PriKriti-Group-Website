@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
-import { prisma } from "src/lib/prisma.ts";
+// route.ts is at src/app/api/leads/route.ts
+import { prisma } from "../../../lib/prisma";
+
 
 export async function GET() {
   const leads = await prisma.lead.findMany({ orderBy: { createdAt: "desc" } });
