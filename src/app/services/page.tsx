@@ -3,7 +3,7 @@ export const metadata = { title: "Services — PRIKRITI GROUP", description: "GS
 export default function Services() {
   const services = [
     {
-      title: "Foreign Trade And Export Promotion"
+      title: "Foreign Trade And Export Promotion",
       items: [
         "GST Registration & Returns Filing",
         "Annual Returns & GST Audits",

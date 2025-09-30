@@ -6,23 +6,16 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  extend: {
-  colors: {
-    brand: {
-      primary: "#E30613", // 🔴 Red
-    },
-  },
-},
-
   theme: {
     extend: {
       colors: {
         brand: {
-          primary: "#E30613", // 🔴 Red
+          primary: "#E30613", // red
         },
       },
     },
   },
   plugins: [],
 };
+
 export default config;
