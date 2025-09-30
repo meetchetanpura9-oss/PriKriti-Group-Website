@@ -1,14 +1,9 @@
 export const metadata = { title: "Our Team — PRIKRITI GROUP" };
 
 const team = [
+  
   {
-    name: "Mr. Chetan Manek",
-    role: "Founder Partner",
-    bio: "Founder with over two decades of experience in GST, Import-Export consultancy and compliance.",
-    img: "/images/team/chetan.jpg",
-  },
-  {
-    name: "Mrs. Krishna Manek",
+    name: "Mrs. Bansari Manek",
     role: "Founder Partner",
     bio: "Strategic leader shaping growth strategy and client relationships since 2007.",
     img: "/images/team/krishna.jpg",
