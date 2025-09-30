@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { prisma } from "@/lib/prisma"; // ensure you have src/lib/prisma.ts per the starter
+import { prisma } from "src/lib/prisma.ts";
 
 export async function GET() {
   const leads = await prisma.lead.findMany({ orderBy: { createdAt: "desc" } });
