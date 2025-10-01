@@ -35,6 +35,22 @@ export default function TeamPage() {
         </div>
       </section>
 
+      {/* Team Video Section */}
+      <section className="py-10 px-4 bg-white flex flex-col items-center">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">Meet Our Team in Action</h2>
+        <div className="w-full flex justify-center">
+          <video
+            src="/videos/team.mp4"
+            controls
+            poster="/images/team/krishna.jpg"
+            className="w-full max-w-2xl rounded-xl shadow-lg border mb-8 object-cover aspect-video max-h-[320px] sm:max-h-[400px] md:max-h-[480px]"
+            style={{ background: '#000' }}
+          >
+            Sorry, your browser does not support embedded videos.
+          </video>
+        </div>
+      </section>
+
       {/* Team Members Section */}
       <section className="py-16 px-4 bg-gradient-to-br from-gray-50 to-white min-h-[60vh]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">

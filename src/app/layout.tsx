@@ -18,26 +18,27 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-white text-gray-900 antialiased min-h-screen flex flex-col">
         {/* ===== Header / Navbar ===== */}
-        <header className="border-b">
-          <nav className="mx-auto max-w-6xl p-4 flex items-center gap-6">
+        <header className="sticky top-0 z-40 shadow-md bg-gradient-to-r from-red-600 via-red-400 to-red-200">
+          <nav className="mx-auto max-w-7xl px-4 py-3 flex items-center gap-6">
             <Link
               href="/"
-              className="font-bold text-lg text-brand-primary"
+              className="font-extrabold text-2xl md:text-3xl tracking-wide text-white drop-shadow-lg hover:scale-105 transition-transform"
+              style={{ letterSpacing: '0.04em' }}
             >
               PRIKRITI GROUP
             </Link>
 
-            <div className="ml-auto flex gap-4 text-sm items-center">
-              <Link href="/about">About</Link>
-              <Link href="/services">Services</Link>
-              <Link href="/industries">Industries</Link>
-              <Link href="/case-studies">Case Studies</Link>
-              <Link href="/faq">FAQ</Link>
-              <Link href="/team">Team</Link>
-              <Link href="/resources">Resources</Link>
+            <div className="ml-auto flex gap-2 md:gap-4 text-sm items-center">
+              <Link href="/about" className="text-white/90 hover:text-white font-medium px-2 py-1 rounded transition">About</Link>
+              <Link href="/services" className="text-white/90 hover:text-white font-medium px-2 py-1 rounded transition">Services</Link>
+              <Link href="/industries" className="text-white/90 hover:text-white font-medium px-2 py-1 rounded transition">Industries</Link>
+              <Link href="/case-studies" className="text-white/90 hover:text-white font-medium px-2 py-1 rounded transition">Case Studies</Link>
+              <Link href="/faq" className="text-white/90 hover:text-white font-medium px-2 py-1 rounded transition">FAQ</Link>
+              <Link href="/team" className="text-white/90 hover:text-white font-medium px-2 py-1 rounded transition">Team</Link>
+              <Link href="/resources" className="text-white/90 hover:text-white font-medium px-2 py-1 rounded transition">Resources</Link>
               <Link
                 href="/contact"
-                className="px-3 py-1.5 rounded-full bg-brand-primary text-white hover:bg-red-700"
+                className="px-4 py-2 rounded-full bg-white text-red-600 font-semibold shadow hover:bg-red-100 hover:text-red-700 transition"
               >
                 Contact
               </Link>

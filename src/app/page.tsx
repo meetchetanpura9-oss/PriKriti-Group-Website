@@ -8,29 +8,29 @@ export default function Home() {
   return (
     <main>
       {/* Live Animated Background Hero Section */}
-  <section className="relative h-[90vh] md:h-[100vh] w-screen min-h-[600px] left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] max-w-none">
+  <section className="relative h-[70vh] md:h-[90vh] w-screen min-h-[400px] md:min-h-[600px] left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] max-w-none flex items-center justify-center">
         <BackgroundSlider
           images={["/images/hero-2.jpg", "/images/hero-3.jpg", "/images/hero-4.jpg", "/images/hero%20banner.jpg"]}
           interval={6000}
           transitionMs={1200}
           overlay={
             <>
-              <h1 className="text-4xl md:text-6xl font-bold drop-shadow-lg text-white">
+              <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-6xl font-bold drop-shadow-lg text-white break-words">
                 Empowering Indian Businesses Since 2007
               </h1>
-              <p className="mt-4 text-lg text-white/90">
+              <p className="mt-4 text-base xs:text-lg text-white/90">
                 GST · Import-Export · DGFT · Compliance · Business Advisory
               </p>
-              <div className="mt-6 flex justify-center gap-4">
+              <div className="mt-6 flex flex-col xs:flex-row justify-center gap-4 w-full max-w-xs mx-auto">
                 <a
                   href="/services"
-                  className="px-6 py-3 bg-red-600 rounded-full text-white font-semibold hover:bg-red-700 transition"
+                  className="px-6 py-3 bg-red-600 rounded-full text-white font-semibold hover:bg-red-700 transition text-center"
                 >
                   Explore Services
                 </a>
                 <a
                   href="/contact"
-                  className="px-6 py-3 bg-white text-red-600 rounded-full font-semibold hover:bg-red-700 hover:text-white transition"
+                  className="px-6 py-3 bg-white text-red-600 rounded-full font-semibold hover:bg-red-700 hover:text-white transition text-center"
                 >
                   Contact Us
                 </a>
@@ -49,23 +49,23 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 px-4 bg-white">
-        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-gray-800">Our Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <div className="bg-gray-100 rounded-lg p-6 shadow hover:shadow-lg transition">
-            <img src="/images/services/gst.jpg.webp" alt="GST" className="w-full h-40 object-cover rounded mb-4" />
-            <h3 className="text-xl font-semibold mb-2">GST Solutions</h3>
-            <p className="text-gray-600">Comprehensive GST registration, filing, and advisory services for businesses of all sizes.</p>
+      <section className="py-16 px-2 sm:px-4 bg-white">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-10 text-center text-gray-800">Our Services</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="bg-gray-100 rounded-lg p-4 sm:p-6 shadow hover:shadow-lg transition flex flex-col items-center">
+            <img src="/images/services/gst.jpg.webp" alt="GST" className="w-full h-32 sm:h-40 object-cover rounded mb-4" />
+            <h3 className="text-lg sm:text-xl font-semibold mb-2">GST Solutions</h3>
+            <p className="text-gray-600 text-center">Comprehensive GST registration, filing, and advisory services for businesses of all sizes.</p>
           </div>
-          <div className="bg-gray-100 rounded-lg p-6 shadow hover:shadow-lg transition">
-            <img src="/images/hero-2.jpg" alt="Import Export" className="w-full h-40 object-cover rounded mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Import-Export</h3>
-            <p className="text-gray-600">Expert support for import-export licensing, documentation, and compliance with DGFT regulations.</p>
+          <div className="bg-gray-100 rounded-lg p-4 sm:p-6 shadow hover:shadow-lg transition flex flex-col items-center">
+            <img src="/images/hero-2.jpg" alt="Import Export" className="w-full h-32 sm:h-40 object-cover rounded mb-4" />
+            <h3 className="text-lg sm:text-xl font-semibold mb-2">Import-Export</h3>
+            <p className="text-gray-600 text-center">Expert support for import-export licensing, documentation, and compliance with DGFT regulations.</p>
           </div>
-          <div className="bg-gray-100 rounded-lg p-6 shadow hover:shadow-lg transition">
-            <img src="/images/hero-3.jpg" alt="Business Advisory" className="w-full h-40 object-cover rounded mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Business Advisory</h3>
-            <p className="text-gray-600">Strategic business consulting to help you grow, stay compliant, and succeed in a competitive market.</p>
+          <div className="bg-gray-100 rounded-lg p-4 sm:p-6 shadow hover:shadow-lg transition flex flex-col items-center">
+            <img src="/images/hero-3.jpg" alt="Business Advisory" className="w-full h-32 sm:h-40 object-cover rounded mb-4" />
+            <h3 className="text-lg sm:text-xl font-semibold mb-2">Business Advisory</h3>
+            <p className="text-gray-600 text-center">Strategic business consulting to help you grow, stay compliant, and succeed in a competitive market.</p>
           </div>
         </div>
       </section>

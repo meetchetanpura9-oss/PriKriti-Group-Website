@@ -35,7 +35,6 @@ export default function Resources() {
             </a>
           ))}
         </div>
-        <p className="mt-10 text-sm text-gray-500 text-center">Put the PDF files inside <code>/public/downloads/</code>.</p>
       </section>
     </main>
   );

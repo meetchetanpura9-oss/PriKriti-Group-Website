@@ -49,9 +49,10 @@ export default function ContactModal({ apiPath = "/api/leads" }: { apiPath?: str
       <div className="relative w-full max-w-xl bg-white rounded-2xl shadow-lg overflow-hidden">
         <div className="p-6">
           <div className="flex items-start justify-between">
-            <h3 className="text-lg font-semibold">Get in touch — PRIKRITI GROUP</h3>
-            <button onClick={() => setOpen(false)} className="text-gray-600 hover:text-gray-900">✕</button>
+            <h3 className="text-xl font-bold text-red-700">Let’s Connect!</h3>
+            <button onClick={() => setOpen(false)} className="text-gray-600 hover:text-gray-900 text-2xl">✕</button>
           </div>
+          <p className="mt-2 text-gray-700 text-base">Have a question or want to discuss your business needs? Fill out the form and our team will reach out to you soon.</p>
 
           <form onSubmit={submit} className="mt-4 space-y-3">
             <div>
