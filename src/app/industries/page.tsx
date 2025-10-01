@@ -3,6 +3,22 @@ export const metadata = { title: "Industries We Serve", description: "Textiles, 
 
 const industries = [
   {
+    name: "Spinning",
+    image: "/images/industries/textile.jpg",
+  },
+  {
+    name: "Ceramic",
+    image: "/images/industries/engineering.jpg",
+  },
+  {
+    name: "Rubber",
+    image: "/images/industries/engineering.jpg",
+  },
+  {
+    name: "Wooven and Non Wooven",
+    image: "/images/industries/textile.jpg",
+  },
+  {
     name: "Textile & Garments Exporters",
     image: "/images/industries/textile.jpg",
   },

@@ -2,7 +2,9 @@
 export const metadata = { title: "PRIKRITI GROUP — Home", description: "Empowering Indian businesses since 2007." };
 
 
+
 import BackgroundSlider from "@/components/BackgroundSlider";
+import Typewriter from "@/components/Typewriter";
 
 export default function Home() {
   return (
@@ -16,7 +18,12 @@ export default function Home() {
           overlay={
             <>
               <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-6xl font-bold drop-shadow-lg text-white break-words">
-                Empowering Indian Businesses Since 2007
+                <Typewriter
+                  words={["Empowering Indian Businesses Since 2007", "Your Trusted GST & Compliance Partner", "Expert Guidance for Growth", "Simplifying Import-Export & DGFT"]}
+                  typingSpeed={70}
+                  pauseTime={1800}
+                  className="inline"
+                />
               </h1>
               <p className="mt-4 text-base xs:text-lg text-white/90">
                 GST · Import-Export · DGFT · Compliance · Business Advisory

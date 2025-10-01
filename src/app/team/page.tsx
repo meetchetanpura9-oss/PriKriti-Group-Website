@@ -42,6 +42,8 @@ export default function TeamPage() {
           <video
             src="/videos/team.mp4"
             controls
+            autoPlay
+            muted
             poster="/images/team/krishna.jpg"
             className="w-full max-w-2xl rounded-xl shadow-lg border mb-8 object-cover aspect-video max-h-[320px] sm:max-h-[400px] md:max-h-[480px]"
             style={{ background: '#000' }}
